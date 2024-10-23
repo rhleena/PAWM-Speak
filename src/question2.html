@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Quiz</title>
+    <link rel="stylesheet" href="question2.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="question1.html" class="arrow-left" aria-label="Back to the previous question">&#8592;</a>
+            <a href="question3.html" class="arrow-right" aria-label="Proceed to the next question">&#8594;</a>
+        </nav>
+    </header>
+
+    <main class="question-container">
+        <header class="topic">
+            <h2 class="topic-title">Answer the questions!</h2>
+        </header>
+
+        <article class="question-box">
+            <h3 class="text-bold">Comprehension</h3>
+            <p class="question-text">How long has the applicant been working in marketing?</p>
+        </article>
+
+        <section class="answer-slots">
+            <div class="slot" aria-label="Drop answer here" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="slot" aria-label="Drop answer here" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="slot" aria-label="Drop answer here" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </section>
+
+        <section class="options" aria-label="Drag and drop the correct answers">
+            <div class="option" draggable="true" ondragstart="drag(event)">Past</div>
+            <div class="option" draggable="true" ondragstart="drag(event)">Present</div>
+            <div class="option" draggable="true" ondragstart="drag(event)">Future</div>
+            <div class="option" draggable="true" ondragstart="drag(event)">Simple</div>
+            <div class="option" draggable="true" ondragstart="drag(event)">Perfect</div>
+            <div class="option" draggable="true" ondragstart="drag(event)">Continuous</div>
+        </section>
+    </main>
+
+    <script src="question2.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+/* Main container */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh; /* Ensures full screen coverage */
+}
+
+.arrow-left,
+.arrow-right {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+}
+
+.arrow-left {
+    left: 20px;
+}
+
+.arrow-right {
+    right: 20px;
+}
+
+/* Article content */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+/* Topic header */
+.topic-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.topic-icon {
+    max-width: 100%;
+    height: auto;
+    width: 120px; /* Base size for larger screens */
+}
+
+/* Adjust title font size */
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+/* Dialogue section */
+.dialogue-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Dialogue boxes */
+.dialogue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    gap: 1rem;
+}
+
+.dialogue p.dialogue-box {
+    background-color: #EAE7FF;
+    color: #5718E9;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.icon {
+    max-width: 100%;
+    height: auto;
+    width: 80px; /* Base size for larger screens */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .dialogue p.dialogue-box {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        width: 60px; /* Scales down the icons for smaller screens */
+    }
+
+    .topic-icon {
+        width: 84px; /* Scales down the topic icon */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .dialogue p.dialogue-box {
+        font-size: 0.8rem;
+    }
+
+    .icon {
+        width: 50px; /* Smaller for mobile */
+    }
+
+    .topic-icon {
+        width: 60px; /* Smaller topic icon for mobile */
+    }
+}

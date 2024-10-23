@@ -1,0 +1,105 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+/* Main container */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh; /* Ensures full screen coverage */
+}
+
+/* Section content */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+/* Image styles */
+img {
+    width: 160px;
+    height: 160px;
+}
+
+/* Header (Title and Subtitle) */
+h1 {
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 8px; /* Adjusts spacing between title and subtitle */
+}
+
+p {
+    font-size: 2vw;
+    color: #7A8D96;
+}
+
+/* Navigation (Level options) */
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+/* Level buttons */
+a.level-button {
+    background-color: #EAE7FF;
+    color: #5718E9;
+    padding: 12px 32px;
+    border-radius: 28px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline-block;
+    text-align: center;
+}
+
+a.level-button:hover {
+    background-color: #D1CFFF;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a.level-button {
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a.level-button {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
