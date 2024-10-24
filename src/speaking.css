@@ -84,6 +84,22 @@ h2 {
     align-items: center;
 }
 
+.hidden {
+    display: none;
+}
+
+.next-button {
+    padding: 12px 32px;
+    background-color: black;
+    border-radius: 28px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    margin-top: 24px;;
+}
+
 /* For smaller screens */
 @media (max-width: 768px) {
     .question-container {

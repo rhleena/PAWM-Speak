@@ -129,6 +129,24 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+/* Feedback Messages */
+.feedback {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.correct {
+    color: #4CAF50;
+}
+
+.incorrect {
+    color: #f44336;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none;
+}
 
 /* For smaller screens */
 @media (max-width: 768px) {

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="comprehension.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">    
     <title>Question Page</title>
 </head>
 
@@ -13,29 +14,55 @@
         <nav>
             <a href="intermediate.html" class="arrow-left" aria-label="Back to the previous question">&#8592;</a>
             <div id="stopwatch">00:00:00</div>
-            <a href="#" class="arrow-right" aria-label="Proceed to the next question">&#8594;</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div class="topic">
-                <h1 class="topic-title">Answer the Questions!</h1>
-            </div>
-            <article class="question-box">
-                <h2 class="text-bold">Comprehension</h2>
-                <p class="question-text">How long has the applicant been working in marketing?</p>
-            </article>
-
-            <div class="answer-section">
-                <div class="answer-box">
-                    <input type="text" class="answer-input" placeholder="Type Here...." aria-label="Answer input">
+        <div class="container">
+            <div id="questionUI">
+                <h1>Answer the Question!</h1>
+                <div class="question-box">
+                    <h2>Comprehension</h2>
+                    <p id="questionText">How long has the applicant been working in marketing?</p>
                 </div>
+                <div class="answer-box">
+                    <input type="text" id="answerInput" class="answer-input" placeholder="Type your answer here..." aria-label="Answer input">
+                </div>
+                <button id="submitButton" class="next-button">Submit</button>
             </div>
-        </section>
-        <button class="next-button" aria-label="Submit your answer">Submit</button>
+            
+            <div id="feedbackUI" class="hidden">
+                <div id="correctFeedback" class="hidden">
+                    <img src="assets/emot bener.png" alt="Welcome Emoji">
+                    <h1 class="feedback correct">You did a great job!</h1>
+                    <div class="question-box">
+                        <h2>Comprehension</h2>
+                        <p id="correctQuestion"></p>
+                    </div>
+                    <div class="answer-box correct">
+                        <p id="correctAnswer"></p>
+                    </div>
+                </div>
+                
+                <div id="incorrectFeedback" class="hidden">
+                    <img src="assets/emot salah.png" alt="Welcome Emoji">
+                    <h1 class="feedback incorrect">Close, but not the correct answer.</h1>
+                    <h2>You've got this—try again!</h2>
+                    <div class="question-box">
+                        <h2>Grammar</h2>
+                        <p>How long has the applicant been working in marketing?</p>
+                    </div>
+                    <div class="answer-box incorrect">
+                        <p id="incorrectAnswer"></p>
+                    </div>
+                </div>
+                
+                <button id="nextButton" class="next-button">Back</button>
+            </div>
+        </div>
     </main>
     <script src="stopwatch.js"></script>
+    <script src="check.js"></script>
 </body>
 
 </html>

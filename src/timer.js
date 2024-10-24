@@ -1,39 +1,41 @@
-let seconds = 0;
-let minutes = 5;
-let hours = 0;
-let intervalId;
-
-function startTimer() {
-    intervalId = setInterval(updateTimer, 1000);
-}
-
-function updateTimer() {
-    if (seconds === 0) {
-        if (minutes === 0) {
-            if (hours === 0) {
-                clearInterval(intervalId);  // Stop the timer when it reaches 00:00:00
-                return;
-            } else {
-                hours--;
-                minutes = 59;
-            }
-        } else {
-            minutes--;
-        }
-        seconds = 59;
-    } else {
-        seconds--;
-    }
-    displayTime();
-}
-
-function displayTime() {
-    const display = document.getElementById('timer');
-    display.textContent = 
-        (hours > 9 ? hours : "0" + hours) + ":" + 
-        (minutes > 9 ? minutes : "0" + minutes) + ":" + 
-        (seconds > 9 ? seconds : "0" + seconds);
-}
+let timeLeft = 3; // Set to 3 seconds for testing purposes
+const timerDisplay = document.getElementById('timer');
+const questionSection = document.getElementById('questionSection');
+const timeUpSection = document.getElementById('timeUpSection'); // Match ID with HTML
+const continueButton = document.getElementById('continueButton');
 
 // Start the timer when the page loads
 window.onload = startTimer;
+
+function startTimer() {
+    const intervalId = setInterval(function () {
+        if (timeLeft <= 0) {
+            clearInterval(intervalId);
+            // When the timer reaches 0, show the Time's Up message
+            showTimeUpMessage();
+        } else {
+            // Decrease the time left and update the timer display
+            timeLeft--;
+            updateTimerDisplay(timeLeft);
+        }
+    }, 1000);
+}
+
+function updateTimerDisplay(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    timerDisplay.textContent = 
+        (minutes < 10 ? '0' : '') + minutes + ':' + 
+        (remainingSeconds < 10 ? '0' : '') + remainingSeconds;
+}
+
+function showTimeUpMessage() {
+    // Hide the question section and show the "Time's Up" feedback
+    questionSection.style.display = 'none'; // Hides the question section
+    timeUpSection.style.display = 'block'; // Shows the Time's Up section
+}
+
+// Event listener for the "Continue" button
+continueButton.addEventListener('click', function() {
+    window.location.href = "level.html";
+});

@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="speaking.css">
-        <title>Question Page</title>
-    </head>
-    
-    <body>
-        <header>
-            <nav>
-                <a href="intermediate.html" class="arrow-left" aria-label="Back to the previous question">&#8592;</a>
-                <a href="#" class="arrow-right" aria-label="Proceed to the next question">&#8594;</a>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="speaking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="intermediate.html" class="arrow-left" aria-label="Back to the previous question">&#8592;</a>
+        </nav>
+    </header>
 
-        <main>
-            <div class="topic">
-                <h1 class="topic-title">Try and finish the challenge!</h1>
-            </div>
-            <div id="timer">00:05:00</div>
-            <article class="question-box">
-                <h2 class="text-bold">Speaking</h2>
-                <p class="question-text">Describe a movie that you found was really great! When did you saw it? What genre is the movie?</p>
-            </article>
-        </main>
-        <script src="timer.js"></script>
-    </body>
+    <main>
+        <div class="topic">
+            <h1 class="topic-title">Try and finish the challenge!</h1>
+        </div>
+        <div id="timer">00:05:00</div>
+        <article class="question-box" id="questionSection">
+            <h2 class="text-bold">Speaking</h2>
+            <p class="question-text">Describe a movie that you found was really great! When did you saw it? What genre is the movie?</p>
+        </article>
+
+        <!-- Time's Up Section (hidden initially) -->
+        <div id="timeUpSection" class="hidden">
+            <img src="assets/emot bintang.png" alt="Welcome Emoji">
+            <h1 class="text-bold">You’re making great progress! </h1>
+            <p class="question-text">Keep practicing to improve your fluency.</p>
+            <button id="continueButton" class="next-button">Back</button>
+        </div>
+    </main>
+    <script src="timer.js"></script>
+</body>
 </html>
