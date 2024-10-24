@@ -22,19 +22,16 @@ main {
     gap: 42px;
 }
 
-/* Arrow button styles */
-nav {
-    display: flex; 
-    justify-content: space-between; /* Space out the buttons */
-    align-items: center; /* Align vertically */
-    padding: 10px 20px; /* Optional padding */
+nav{
+    align-items: center;
 }
-
+/* Arrow button styles */
 .arrow-left,
 .arrow-right {
     font-size: 24px;
     color: black;
     text-decoration: none;
+    position: absolute;
     top: 20px;
 }
 
@@ -45,7 +42,6 @@ nav {
 .arrow-right {
     right: 20px;
 }
-
 
 /* Topic Title */
 header .topic-title {
@@ -133,6 +129,15 @@ article h3.text-bold {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+#stopwatch {
+    padding: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* For smaller screens */
