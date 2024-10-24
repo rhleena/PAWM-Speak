@@ -1,4 +1,4 @@
-let timeLeft = 3; // Set to 3 seconds for testing purposes
+let timeLeft = 300; // Set to 3 seconds for testing purposes
 const timerDisplay = document.getElementById('timer');
 const questionSection = document.getElementById('questionSection');
 const timeUpSection = document.getElementById('timeUpSection'); // Match ID with HTML
