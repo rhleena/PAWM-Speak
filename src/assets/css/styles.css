@@ -1,0 +1,217 @@
+:root {
+    /* Grayscale */
+    --color-grayscale-900: #061C3D;
+    --color-grayscale-800: #243752;
+    --color-grayscale-700: #42526B;
+    --color-grayscale-600: #6A778B;
+    --color-grayscale-500: #838E9E;
+    --color-grayscale-400: #9BA4B1;
+    --color-grayscale-300: #B4BBC5;
+    --color-grayscale-200: #CDD2D8;
+    --color-grayscale-100: #E6E8EC;
+    --color-grayscale-50: #F5F6F7;
+    --color-grayscale-0: #FFFFFF;
+
+    /* Primary Purple */
+    --color-primary-900: #170A33;
+    --color-primary-800: #2F1566;
+    --color-primary-700: #461F99;
+    --color-primary-600: #5E2ACC;
+    --color-primary-500: #7534FF;
+    --color-primary-400: #915DFF;
+    --color-primary-300: #AC85FF;
+    --color-primary-200: #C8AEFF;
+    --color-primary-100: #E3D6FF;
+    --color-primary-50: #F1EBFF;
+
+    /* Secondary Pink */
+    --color-secondary-900: #300F28;
+    --color-secondary-800: #611D50;
+    --color-secondary-700: #922878;
+    --color-secondary-600: #C23AA0;
+    --color-secondary-500: #F249C8;
+    --color-secondary-400: #F56DD3;
+    --color-secondary-300: #F792DE;
+    --color-secondary-200: #FAB6E9;
+    --color-secondary-100: #FCDBF4;
+    --color-secondary-50: #FEEDFA;
+
+    /* Tertiary Blue */
+    --color-tertiary-900: #02142E;
+    --color-tertiary-800: #04285C;
+    --color-tertiary-700: #073B89;
+    --color-tertiary-600: #094FB7;
+    --color-tertiary-500: #0B63E5;
+    --color-tertiary-400: #3C82EA;
+    --color-tertiary-300: #6DA1EF;
+    --color-tertiary-200: #9DC1F5;
+    --color-tertiary-100: #CEE0FA;
+    --color-tertiary-50: #F0F5FF;
+
+    /* Error Red */
+    --color-error-900: #2E0E0E;
+    --color-error-800: #5C1C1C;
+    --color-error-700: #892929;
+    --color-error-600: #B73737;
+    --color-error-500: #E54545;
+    --color-error-400: #EA6A6A;
+    --color-error-300: #EF8F8F;
+    --color-error-200: #F5B5B5;
+    --color-error-100: #FADADA;
+    --color-error-50: #FCECEC;
+
+    /* Success Green */
+    --color-success-900: #031F05;
+    --color-success-800: #063D0A;
+    --color-success-700: #095C0E;
+    --color-success-600: #0C7A13;
+    --color-success-500: #0F9918;
+    --color-success-400: #3FAD46;
+    --color-success-300: #6FC274;
+    --color-success-200: #9FD6A3;
+    --color-success-100: #CFEBD1;
+    --color-success-50: #E7F5E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url('../images/background.png');
+    background-repeat: round;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.text-style-display-01 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 88px;
+    margin-bottom: 2rem;
+}
+
+.text-style-heading-03 {
+	font-size: 2.5rem;
+	font-family: Inter;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 48px;
+	letter-spacing: -0.02em;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--color-secondary-500) 0%, var(--color-primary-500) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-style-body-large-300 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--color-grayscale-800);
+    max-width: 800px;
+    margin-bottom: 3rem;
+}
+
+.text-style-subheading-02 {
+	font-size: 1.25rem;
+	font-family: Inter;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 28px;
+	letter-spacing: -0.012em;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.button-primary {
+    border-radius: 1.5rem;
+    background: var(--color-primary-900, #170A33);
+    color: var(--color-grayscale-0);
+}
+
+.button-secondary {
+    color: var(--color-primary-900);
+    border: 1.5px solid var(--color-primary-900);
+    margin-right: 1rem;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-grayscale-600);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1.5rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .text-style-display-01 {
+        font-size: 3.5rem;
+        line-height: 60px;
+    }
+
+    .text-style-heading-03 {
+        font-size: 1rem;
+        line-height: 36px;
+    }
+
+    .text-style-body-large-300 {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}

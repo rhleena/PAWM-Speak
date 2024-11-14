@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Speak!</title>
-    <link rel="stylesheet" href="src/welcome.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">    
+    <title>Speak - Learn English</title>
+    <link rel="stylesheet" href="src/assets/css/styles.css">
+    <link rel="stylesheet" href="src/assets/css/landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <section>
-            <img src="src/assets/emot welcome.png" alt="Welcome Emoji">
-            <article>
-                <h1>
-                    <span>Welcome to </span>
-                    <strong>Speak!</strong>
-                </h1>
-                <p>Start learning English easily from your laptop!</p>
-            </article>
-            <a href="src/level.html" class="start-button">Start Now</a>
-        </section>
-    </main>
+    <div class="welcome-section">
+        <nav>
+            <a href="#" class="logo">
+                <img src="src/assets/images/speak logo.png " alt="Speak Logo">
+            </a>
+            <div class="nav-buttons">
+                <a href="login.html" class="button button-secondary">Log In</a>
+                <a href="signup.html" class="button button-primary">Sign In</a>
+            </div>
+        </nav>
+
+        <main>
+            <h1 class="text-style-display-01">The easiest way to learn <span class="gradient-text">english.</span></h1>
+            <p class="text-style-body-large-300">
+                Speak makes learning fun and effective with interactive quizzes on vocabulary,
+                grammar, and reading comprehension. Whether you're a beginner or looking to polish
+                advanced skills, our website is here to help!
+            </p>
+            <div>
+                <a href="login.html" class="button button-secondary">Log In</a>
+                <a href="signup.html" class="button button-primary">Sign In</a>
+            </div>
+        </main>
+
+        <footer>
+            © 2024 Speak, All rights reserved
+        </footer>
+    </div>
+
+    <script src="src/assets/javascript/landing.js"></script>
 </body>
 </html>

@@ -1,0 +1,142 @@
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.login-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-grayscale-900);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.login-subtitle {
+    color: var(--color-grayscale-700);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    line-height: 1.75rem; /* 140% */
+    letter-spacing: -0.015rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.form-row {
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+}
+
+.form-group {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-grayscale-700);
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-grayscale-200);
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--color-primary-500);
+    box-shadow: 0 0 0 3px var(--color-primary-100);
+}
+
+.password-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-password {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-grayscale-500);
+}
+
+.forgot-password {
+    font-size: 0.875rem;
+    color: var(--color-primary-500);
+    text-decoration: none;
+    align-self: flex-end;
+    margin-top: 0.5rem;
+}
+
+.login-button {
+    background-color: var(--color-primary-500);
+    color: var(--color-grayscale-0);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: var(--color-primary-600);
+}
+
+.signup-prompt {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: var(--color-grayscale-600);
+}
+
+.signup-link {
+    color: var(--color-primary-500);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-grayscale-600);
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1.5rem;
+    }
+
+    .nav-buttons {
+        display: none;
+    }
+
+    .login-container {
+        padding: 2rem;
+    }
+}
