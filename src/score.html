@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Score and History</title>
+    <link rel="stylesheet" href="assets/css/score.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz Score and History</h1>
+        </header>
+        <main>
+            <section id="currentScore">
+                <h2>Current Score</h2>
+                <p id="scoreDisplay"></p>
+            </section>
+            <section id="quizHistory">
+                <h2>Quiz History</h2>
+                <ul id="historyList"></ul>
+            </section>
+        </main>
+        <footer>
+            <button id="viewHistory">View Score History</button>
+            <p>© 2024 Speak. All rights reserved</p>
+        </footer>        
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js" type="module"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js" type="module"></script>
+
+    <!-- Your score-history script -->
+    <script src="assets/javascript/score.js" type="module"></script>
+</body>
+</html>

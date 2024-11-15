@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="assets/css/quiz.css">
+    
+    <!-- Firebase SDK - Use consistent version (10.11.1) -->
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+</head>
+<body>
+    <div id="quizContainer">
+        <h1 id="questionText"></h1>
+        <div id="answerArea"></div>
+        <div id="timerContainer"></div>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="submitBtn">Submit Quiz</button>
+    </div>
+    <footer>© 2024 Speak. All rights reserved</footer>
+
+    <!-- Your quiz script - Remove type="module" since we're using compat version -->
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>

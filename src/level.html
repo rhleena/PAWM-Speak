@@ -4,23 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose Your Level</title>
-    <link rel="stylesheet" href="level.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/level.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">    
 </head>
 <body>
     <main>
-        <section>
-            <img src="assets/emot speak.png" alt="Emoji Speak">
-            <header>
-                <h1>Choose your level</h1>
-                <p>Choose the level that best matches your English skills</p>
-            </header>
-            <nav>
-                <a href="intermediate.html" class="level-button">Comprehension</a>
-                <a href="grammar.html" class="level-button">Grammar</a>
-                <a href="speaking.html" class="level-button">Speaking</a>
-            </nav>
-        </section>
+        <img src="assets/emot speak.png" alt="Emoji Speak">
+        <h1 class="text-style-display-01"> Choose Your <span class="gradient-text">Level.</span></h1>
+        <p class="text-subheading-level"> Choose the level that best matches your English skills </p>
+        <nav>
+            <a href="quiz.html" class="level-button" id="comprehensionButton">Comprehension</a>
+            <a href="#" class="level-button" id="grammarButton">Grammar</a>
+            <a href="#" class="level-button" id="speakingButton">Speaking</a>
+        </nav>
+
+        <h2>Quiz History</h2>
+        <div id="historyContainer">
+            <table id="historyTable">
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                    <!-- Quiz history will be populated here -->
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            © 2024 Speak, All rights reserved
+        </footer>
     </main>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore-compat.js"></script>
+
+    <!-- Main JavaScript file -->
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    color: #6a11cb;
+    text-align: center;
+}
+
+h3 {
+    color: #6a11cb;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #5a0db1;
+}
+
+#prevBtn, #nextBtn {
+    background-color: transparent;
+    color: #6a11cb;
+    font-size: 1.5rem;
+}
+
+#answerArea {
+    margin-top: 1rem;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #6a11cb;
+    border-radius: 5px;
+    text-align: left;
+    background-color: white;
+}
+
+.option:hover, .option:focus {
+    background-color: #f0e6ff;
+}
+
+.selected {
+    background-color: #d9bfff;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #6a11cb;
+    border-radius: 5px;
+}
+
+#timerContainer {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #6a11cb;
+}
+
+#submitBtn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.75rem;
+}
+
+footer {
+    margin-top: 2rem;
+    color: #6a11cb;
+    font-size: 0.8rem;
+}
+
+.draggable {
+    cursor: move;
+    user-select: none;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #6a11cb;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+}
